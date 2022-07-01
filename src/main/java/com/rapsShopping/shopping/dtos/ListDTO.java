@@ -21,4 +21,9 @@ public class ListDTO {
         this.name = eList.getShoppingMonth();
         this.items = items;
     }
+
+    public ListDTO(Long id, List<ItemDTO> items) {
+        this.id = id;
+        this.items = items;
+    }
 }

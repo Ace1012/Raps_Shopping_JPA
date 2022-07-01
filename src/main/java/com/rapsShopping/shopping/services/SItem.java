@@ -31,6 +31,10 @@ public class SItem {
                 .collect(Collectors.toList());
     }
 
+    public EItem getEItem(Long id){
+        return itemRepository.fetchItemById(id);
+    }
+
     private CategoryDTO convertCategoryToDTO(ECategory eCategory){
         return new CategoryDTO(eCategory);
     }
@@ -44,7 +48,6 @@ public class SItem {
                 itemDTO = new ItemDTO(eItem, categoryDTO);
             }
         }
-
         return itemDTO;
     }
 

@@ -23,4 +23,7 @@ public class EList_Items {
     @JoinColumn(name = "item_id", referencedColumnName = "id")
     private EItem eItem;
 
+    @Column(name = "quantity")
+    private Long quantity;
+
 }

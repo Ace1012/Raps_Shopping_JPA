@@ -70,6 +70,7 @@ CREATE TABLE IF NOT EXISTS public.lists_items
     id SERIAL NOT NULL,
     list_id integer NOT NULL,
     item_id integer NOT NULL,
+    quantity integer NOT NULL,
     CONSTRAINT lists_id_pkey PRIMARY KEY (id),
     CONSTRAINT lists_items_unique UNIQUE (list_id, item_id),
     CONSTRAINT lists_fkey FOREIGN KEY (list_id)

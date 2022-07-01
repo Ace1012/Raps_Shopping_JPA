@@ -38,13 +38,13 @@ INSERT INTO public.lists (shopping_month, list_date) VALUES
     ON CONFLICT DO NOTHING;
 
 --Lists_Items table data
-INSERT INTO public.lists_items (list_id, item_id) VALUES
-    (1, 1),
-    (1, 2),
-    (1, 3),
-    (1,4),
-    (1,5),
-    (2, 1),
-    (2, 2),
-    (2, 3)
+INSERT INTO public.lists_items (list_id, item_id, quantity) VALUES
+    (1, 1, 1),
+    (1, 2, 1),
+    (1, 3, 1),
+    (1, 4, 1),
+    (1, 5, 1),
+    (2, 1, 1),
+    (2, 2, 1),
+    (2, 3, 1)
     ON CONFLICT DO NOTHING;
